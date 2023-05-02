@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2b2t player checker</title>
+</head>
+
+<body>
+    <div class="web">
+      <h1>2b2t player checker</h1>
+      <input placeholder="nick" type="text" id="name" onchange="req().then(response => check(response, document.getElementById('name').value)).catch(error => console.error(error));">
+      <button onclick="req().then(response => check(response, document.getElementById('name').value)).catch(error => console.error(error));">AAAAAA</button>
+      <h1 id="res"></h6>
+    </div>
+
+    <script src="main.js"></script>
+
+    <style>
+      .web {
+        text-align: center;
+        margin: auto;
+        display: block;
+        padding-top: 5%;
+      }
+    </style>
+</body>
+</html>
